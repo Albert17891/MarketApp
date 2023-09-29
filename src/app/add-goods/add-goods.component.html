@@ -1,1 +1,55 @@
-<p>add-goods works!</p>
+<form [formGroup]="goodsForm" (ngSubmit)="onSubmit()">
+    <div class="p-fluid">
+      <div class="p-field">
+        <label for="name">საქონლის სახელი</label>
+        <input id="name" type="text" pInputText formControlName="name" />
+        <div *ngIf="goodsForm.get('name')!.hasError('required')" class="p-error">
+         საქონლის სახელი არის აუცილებელი.
+        </div>
+      </div>
+      <div class="p-field">
+        <label for="description">აღწერა</label>
+        <textarea
+          id="description"
+          pInputTextarea
+          formControlName="description"
+        ></textarea>
+      </div>
+      <div class="p-field">
+        <label for="price">რაოდენობა</label>
+        <input id="price" type="number" pInputText formControlName="price" />
+        <div *ngIf="goodsForm.get('price')!.hasError('required')" class="p-error">
+          მიუთითე რაოდენობა.
+        </div>
+        <div *ngIf="goodsForm.get('price')!.hasError('min')" class="p-error">
+          რაოდენობა არ შეიძლება იყოს უარყობითი.
+        </div>
+      </div>
+      <div class="p-field">
+        <label for="price">ფასი</label>
+        <input id="price" type="number" pInputText formControlName="price" />
+        <div *ngIf="goodsForm.get('price')!.hasError('required')" class="p-error">
+          ფასი არის აუცილებელი.
+        </div>
+        <div *ngIf="goodsForm.get('price')!.hasError('min')" class="p-error">
+          ფასი არ შეიძლება იყოს უარყობითი.
+        </div>
+      </div>
+      <div class="p-field">
+        <label for="price">მდებარეობა</label>
+        <input id="price" type="number" pInputText formControlName="price" />
+        <div *ngIf="goodsForm.get('price')!.hasError('required')" class="p-error">
+          მდებარეობა არის აუცილებელი
+        </div>        
+      </div>
+      <div class="p-field">
+        <button
+          type="submit"
+          pButton
+          label="Submit"
+          [disabled]="!goodsForm.valid"
+        ></button>
+      </div>
+    </div>
+  </form>
+  
