@@ -1,0 +1,16 @@
+<div class="search">   
+    <div class="goods">
+        <p-dropdown [options]="goodsType" [(ngModel)]="selectedType" optionLabel="name" placeholder="აირჩიე საქონლის ტიპი"></p-dropdown>
+    </div>
+    <div class="place">
+        <p-dropdown [options]="placeType" [(ngModel)]="selectedPlace" optionLabel="name" placeholder="მდებარეობა"></p-dropdown>
+    </div>
+    <div class="quantity">
+        <p-inputNumber inputId="integeronly" [(ngModel)]="quantity" placeholder="რაოდენობა მაქს"> </p-inputNumber>
+    </div>
+    <div class="price">
+        <p-inputNumber inputId="integeronly" [(ngModel)]="quantity" placeholder="ფასი "> </p-inputNumber>
+    </div>
+ </div>
+
+   

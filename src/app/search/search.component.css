@@ -1,0 +1,24 @@
+.search{
+    display: flex;      
+}
+
+.goods{
+    margin-top: 80px;
+    margin-left: 80px;  
+}
+
+.place{
+    margin-top: 80px;
+    margin-left: 80px;  
+}
+
+.quantity{
+    margin-top: 80px;
+    margin-left: 80px;  
+}
+
+.price{
+    margin-top: 80px;
+    margin-left: 80px;  
+}
+
