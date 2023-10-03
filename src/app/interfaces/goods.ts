@@ -4,6 +4,5 @@ export interface goods{
     description:string;
     quantity:number;
     price:number;
-    place:string;
-    quality:string;
+    place:string;   
 }
