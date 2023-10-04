@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { ServerConnectService } from '../services/server-connect.service';
 
 @Component({
   selector: 'app-login',
@@ -7,10 +9,9 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
-  username: string = '';
-  password: string = '';
+  constructor(private authService:ServerConnectService){}
 
-  onSubmit(){
-    
+  onSubmit(login:NgForm){
+    this.authService.login(login.value.UserName,login.value.Password);
   }
 }
