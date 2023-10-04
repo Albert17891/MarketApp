@@ -15,6 +15,7 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { TokenInterceptor } from './services/token-interceptor.service';
 import { RegisterComponent } from './register/register.component';
+import { CustomerPageComponent } from './customer-page/customer-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { RegisterComponent } from './register/register.component';
     SearchComponent,
     LoginComponent,
     AddGoodsComponent,
-    RegisterComponent
+    RegisterComponent,
+    CustomerPageComponent
   ],
   imports: [
     BrowserModule,

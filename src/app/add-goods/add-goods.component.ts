@@ -20,6 +20,6 @@ export class AddGoodsComponent {
      }
 
      onSubmit(){
-        
+        console.log(this.goodsForm.value);
      }
 }

@@ -5,12 +5,13 @@ import { Observable } from 'rxjs';
 import { TokenService } from './TokenService';
 import { RegisterRequest } from '../interfaces/RegisterRequest';
 import { LoginResponse } from '../interfaces/LoginResponse';
+import { Route, Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ServerConnectService {
-  constructor(private http: HttpClient, private tokenService: TokenService) {}
+  constructor(private http: HttpClient, private tokenService: TokenService,private route:Router) {}
 
   
   login(userName: string, password: string): void {
@@ -25,9 +26,10 @@ export class ServerConnectService {
     this.http.post(url, loginRequest).subscribe(response=> {
           
       if(response!=null){
-        const loginResponse =<LoginResponse> response;
-         console.log(loginResponse)
+        const loginResponse =<LoginResponse> response;        
         this.tokenService.saveToken(loginResponse.token);
+
+       this.route.navigate(["customer"])
       }      
     });  
   }

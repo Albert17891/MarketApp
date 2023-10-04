@@ -1,0 +1,53 @@
+/* Adjust the form container as needed */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style form fields */
+  .p-field {
+    margin-bottom: 20px;
+  }
+  
+  /* Label styles */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Input and textarea styles */
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Error message styles */
+  .p-error {
+    color: #ff0000; /* Red color for error messages */
+    margin-top: 5px;
+  }
+  
+  /* Button styles */
+  button[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Primary button color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:disabled {
+    background-color: #ccc; /* Disabled button color */
+    cursor: not-allowed;
+  }
+  

@@ -16,12 +16,12 @@
         ></textarea>
       </div>
       <div class="p-field">
-        <label for="price">რაოდენობა</label>
-        <input id="price" type="number" pInputText formControlName="price" />
-        <div *ngIf="goodsForm.get('price')!.hasError('required')" class="p-error">
+        <label for="quantity">რაოდენობა</label>
+        <input id="quantity" type="number" pInputText formControlName="quantity" />
+        <div *ngIf="goodsForm.get('quantity')!.hasError('required')" class="p-error">
           მიუთითე რაოდენობა.
         </div>
-        <div *ngIf="goodsForm.get('price')!.hasError('min')" class="p-error">
+        <div *ngIf="goodsForm.get('quantity')!.hasError('min')" class="p-error">
           რაოდენობა არ შეიძლება იყოს უარყობითი.
         </div>
       </div>
@@ -36,9 +36,9 @@
         </div>
       </div>
       <div class="p-field">
-        <label for="price">მდებარეობა</label>
-        <input id="price" type="number" pInputText formControlName="price" />
-        <div *ngIf="goodsForm.get('price')!.hasError('required')" class="p-error">
+        <label for="place">მდებარეობა</label>
+        <input id="place" type="text" pInputText formControlName="place" />
+        <div *ngIf="goodsForm.get('place')!.hasError('required')" class="p-error">
           მდებარეობა არის აუცილებელი
         </div>        
       </div>
