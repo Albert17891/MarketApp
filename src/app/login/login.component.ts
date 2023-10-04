@@ -12,6 +12,6 @@ export class LoginComponent {
   constructor(private authService:ServerConnectService){}
 
   onSubmit(login:NgForm){
-    this.authService.login(login.value.UserName,login.value.Password);
+    this.authService.login(login.value.username,login.value.password);
   }
 }
