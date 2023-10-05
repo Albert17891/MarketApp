@@ -16,6 +16,8 @@ import { InputTextModule } from 'primeng/inputtext';
 import { TokenInterceptor } from './services/token-interceptor.service';
 import { RegisterComponent } from './register/register.component';
 import { CustomerPageComponent } from './customer-page/customer-page.component';
+import { MyProductComponent } from './my-product/my-product.component';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { CustomerPageComponent } from './customer-page/customer-page.component';
     LoginComponent,
     AddGoodsComponent,
     RegisterComponent,
-    CustomerPageComponent
+    CustomerPageComponent,
+    MyProductComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,7 @@ import { CustomerPageComponent } from './customer-page/customer-page.component';
     ReactiveFormsModule,
     InputTextModule,
     ButtonModule,
-      
+    TableModule  
   ],
   providers: [
     {

@@ -1,15 +1,15 @@
 <div class="customer-page">
-    <h1>მოგესალმებით, {{userName}}!</h1>
-  
-    <!-- Navigation menu -->
-    <ul class="nav-menu">
-      <li>
-        <a routerLink="/customer/add-goods" >საქონლის დამატება</a>
-      </li>
-      <li>
-        <a routerLink="/my-products" routerLinkActive="active">ჩემი პროდუქტები</a>
-      </li>
-    </ul>
-  
-    <router-outlet></router-outlet>
-  </div>
+  <h1>მოგესალმებით, {{ userName }}!</h1>
+
+  <!-- Navigation menu -->
+  <ul class="nav-menu">
+    <li>
+      <a routerLink="/customer/add-goods">საქონლის დამატება</a>
+    </li>
+    <li>
+      <a routerLink="/customer/my-products">ჩემი პროდუქტები</a>
+    </li>
+  </ul>
+
+  <router-outlet></router-outlet>
+</div>

@@ -1,69 +1,68 @@
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Customer Page Container */
-  .customer-page {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Header Styles */
-  h1 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  /* Navigation Menu Styles */
-  .nav-menu {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .nav-menu li {
-    margin-right: 20px;
-  }
-  
-  .nav-menu a {
-    text-decoration: none;
-    color: #007bff; /* Link color */
-    font-weight: bold;
-    transition: color 0.2s;
-  }
-  
-  .nav-menu a:hover {
-    color: #0056b3; /* Hover color */
-  }
-  
-  /* Active Menu Item */
-  .active a {
-    color: #ff6600; /* Active menu item color */
-  }
-  
-  /* Router Outlet Styles */
-  .router-outlet {
-    margin-top: 20px;
-  }
-  
-  /* Add Product Form Styles (for demonstration) */
-  .add-product-form {
-    text-align: left;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 4px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* My Products List Styles (for demonstration) */
-  .my-products-list {
-    list-style-type: none;
-    padding: 0;
-  }  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Customer Page Container */
+.customer-page {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header Styles */
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Navigation Menu Styles */
+.nav-menu {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu li {
+  margin-right: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #007bff; /* Link color */
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+  color: #0056b3; /* Hover color */
+}
+
+/* Active Menu Item */
+.active a {
+  color: #ff6600; /* Active menu item color */
+}
+
+/* Router Outlet Styles */
+.router-outlet {
+  margin-top: 20px;
+}
+
+/* Add Product Form Styles (for demonstration) */
+.add-product-form {
+  text-align: left;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* My Products List Styles (for demonstration) */
+.my-products-list {
+  list-style-type: none;
+  padding: 0;
+}

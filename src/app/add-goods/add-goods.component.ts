@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { GoodsService } from '../services/goods.service';
 
 @Component({
   selector: 'app-add-goods',
@@ -8,9 +9,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class AddGoodsComponent {
        
-    goodsForm:FormGroup;
+      goodsForm:FormGroup;
 
-     constructor(private formBuilder:FormBuilder){
+     constructor(private formBuilder:FormBuilder,private goodsService:GoodsService){
          this.goodsForm=this.formBuilder.group({
           name:['',Validators.required],
           quantity:[0,[Validators.required,Validators.min(0)]],
@@ -19,7 +20,7 @@ export class AddGoodsComponent {
          })
      }
 
-     onSubmit(){
-        console.log(this.goodsForm.value);
+     onSubmit(){       
+         this.goodsService.addProduct(this.goodsForm.value);
      }
 }

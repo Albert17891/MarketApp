@@ -21,12 +21,12 @@ export class GoodsService {
        });
   }
 
-  getProduct(id:string):Observable<Goods>{
+  getProduct(id:string):Observable<Goods[]>{
  
     const url=`${AppConfig.apiUrl}Goods/get-my-goods`;
 
     const params = { id: id };
     
-    return this.http.get<Goods>(url, { params: params });
+    return this.http.get<Goods[]>(url, { params: params });
   }
 }

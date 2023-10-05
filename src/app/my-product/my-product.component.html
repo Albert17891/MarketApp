@@ -1,0 +1,24 @@
+<div class="card">
+  <p-table [value]="goods" styleClass="p-datatable-gridlines">
+    <ng-template pTemplate="caption"> Header </ng-template>
+    <ng-template pTemplate="header">
+      <tr>
+        <th>სახელი</th>
+        <th>აღწერა</th>
+        <th>რაოდენობა</th>
+        <th>ფასი</th>
+        <th>მდებარეობა</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-good>
+      <tr>
+        <td>{{ good.name }}</td>
+        <td>{{ good.description }}</td>
+        <td>{{ good.quantity }}</td>
+        <td>{{ good.price }}</td>
+        <td>{{ good.place }}</td>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="summary"> Footer </ng-template>
+  </p-table>
+</div>

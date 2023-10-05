@@ -33,7 +33,8 @@ export class ServerConnectService {
 
         const decodedToken: {name:string} = jwt_decode(loginResponse.token);
         
-        localStorage.setItem('userName',decodedToken.name);       
+        localStorage.setItem('userName',decodedToken.name);  
+        localStorage.setItem('UserId',loginResponse.userId);     
 
        this.route.navigate(["customer"])       
        

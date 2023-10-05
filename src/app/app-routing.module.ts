@@ -5,6 +5,7 @@ import { RegisterComponent } from './register/register.component';
 import { AddGoodsComponent } from './add-goods/add-goods.component';
 import { SearchComponent } from './search/search.component';
 import { CustomerPageComponent } from './customer-page/customer-page.component';
+import { MyProductComponent } from './my-product/my-product.component';
 
 const routes: Routes = [
 
@@ -13,10 +14,12 @@ const routes: Routes = [
   {path:'register',component:RegisterComponent},
   {path:'customer',component:CustomerPageComponent,
      children:[
-      {path:'add-goods',component:AddGoodsComponent}
+      {path:'add-goods',component:AddGoodsComponent},
+      {path:'my-products',component:MyProductComponent}
      ]
   },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' }
+ 
 ];
 
 @NgModule({
