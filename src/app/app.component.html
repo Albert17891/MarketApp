@@ -1,5 +1,12 @@
-<a class="link" routerLink="/login">შესვლა</a>
-<a class="link" routerLink="/register">რეგისტრაცია</a>
+<div class="route">
+    <a class="link" routerLink="/login" *ngIf="!isLoggedIn">შესვლა</a>
+    <a class="link" routerLink="/register" *ngIf="!isLoggedIn">რეგისტრაცია</a>
+
+<!-- Show "Log-out" link if user is logged in -->
+    <a class="link" routerLink="/home" (click)="logOut()" *ngIf="isLoggedIn">გასვლა</a>
+</div>
+
+
 
 <router-outlet></router-outlet>
 

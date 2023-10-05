@@ -1,5 +1,4 @@
-export interface Goods{
-    id:number;
+export interface GoodsRequest{
     name:string;
     description:string;
     quantity:number;
