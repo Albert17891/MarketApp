@@ -1,6 +1,5 @@
 <div class="card">
-  <p-table [value]="goods" styleClass="p-datatable-gridlines">
-    <ng-template pTemplate="caption"> Header </ng-template>
+  <p-table [value]="goods" styleClass="p-datatable-gridlines">    
     <ng-template pTemplate="header">
       <tr>
         <th>სახელი</th>
@@ -18,7 +17,6 @@
         <td>{{ good.price }}</td>
         <td>{{ good.place }}</td>
       </tr>
-    </ng-template>
-    <ng-template pTemplate="summary"> Footer </ng-template>
+    </ng-template>    
   </p-table>
 </div>

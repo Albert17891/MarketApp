@@ -15,7 +15,10 @@ export class GoodsService {
   addProduct(goodsRequest:GoodsRequest){
     const url=`${AppConfig.apiUrl}Goods/add-goods`;
 
-
+    const userId=localStorage.getItem('UserId');
+      
+    goodsRequest.userId=userId!;
+          console.log(goodsRequest)
        this.http.post(url,goodsRequest).subscribe(res=>{
 
        });

@@ -14,6 +14,7 @@ export class AddGoodsComponent {
      constructor(private formBuilder:FormBuilder,private goodsService:GoodsService){
          this.goodsForm=this.formBuilder.group({
           name:['',Validators.required],
+          description:['',Validators.required],
           quantity:[0,[Validators.required,Validators.min(0)]],
           price:[0,[Validators.required,Validators.min(0)]],
           place:['',Validators.required]
